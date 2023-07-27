@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title> Telecall </title>
+</head>
+
+<body id="paginatoda">
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logotipo.png" alt="Logo" width="150" height="30" class="d-inline-block align-text-top">
+      </a>
+
+      <a href="telefonia.html" id="botaonavbar1">Telefonia</a>
+      <a href="infraestrutura.html" id="botaonavbar2">Infraestrutura</a>
+      <a href="internet.html" id="botaonavbar1">Internet</a>
+      <div class="dropdown">
+        <button class="dropbtn" id="internetdrop">CPaaS</button>
+        <div class="dropdown-content">
+          <a href="2fa.html">2FA</a>
+          <a href="verified.html">Google Verified Calls</a>
+          <a href="sms.html">SMS Programável</a>
+          <a href="mascara.html">Número Máscara</a>
+        </div>
+      </div>
+      <div id="userDetails"></div>
+      <a href="login.html" id="botaonavbar3">Login</a>
+      <a href="cadastrar.html" id="botaocadastrar">Cadastrar</a>
+      <div id="zoom">
+        <input type="image" src="img/zoommais.png" class="image" id="aumentar">
+        </div>
+        <div id="zoom">
+        <input type="image" src="img/zoommenos.png" class="image" id="diminuir">
+      </div>
+      <div class="image-container">
+        <input type="image" src="img/brasil.jpg" class="btTxt submit" onclick="window.location.href='index.html';"
+          id="brasil">
+        <input type="image" src="img/eua.jpg" class="btTxt submit" onclick="window.location.href='indexeng.html';"
+          id="eua">
+
+        <i id="mode_icon" class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="video-container">
+          <video controls autoplay loop muted>
+            <source src="media/video_telecall2.mp4" type="video/mp4">
+            Seu navegador não suporta esse vídeo.
+          </video>
+        </div>
+        <img src="img/What-is-CPaaS.png" id="cpaas">
+        <div class="content-box">
+          <h1>Você conhece nosso CPaaS? Oferecemos serviços como 2FA, número máscara, "Google verified calls" e SMS
+            programável!</h1>
+          <div class="button-container">
+            <a href="2fa.html" class="btn btn-warning btn-lg" id="botaocpaas">2FA</a>
+            <a href="mascara.html" class="btn btn-warning btn-lg" id="botaocpaas">Número Máscara</a>
+            <a href="verified.html" class="btn btn-warning btn-lg" id="botaocpaas">Google Verified Calls</a>
+            <a href="sms.html" class="btn btn-warning btn-lg" id="botaocpaas">SMS Programável</a>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md text-center">
+              <h2>Quem somos?</h2>
+              <label id="quemsomos">A Telecall é uma operadora de telecomunicações brasileira que oferece
+                a seus clientes o mais alto padrão de qualidade, velocidade e acessibilidade em soluções
+                de comunicação. Serviços que incluem uma ampla gama de valores agregados, oferecendo aos
+                clientes operações mais produtivas, inovadoras e eficazes. Com mais de 20 anos de
+                experiência na indústria global, a Telecall hoje é sinônimo de qualidade e
+                eficiência.</label>
+            </div>
+            <div class="col-md">
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="css/img/img7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="css/img/img1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="css/img/img2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md text-center">
+      <img src="img/mapa-fibra-rj.png" id="mapafibra">
+      <div class="escritamapa">
+        <h3 id="mapaheader">+800 km de rede no Rio de Janeiro</h3><label id="infratexto">Soluções de acesso que
+          possibilitam as empresas a se conectarem
+          a Internet com máxima qualidade disponibilidade e segurança.</label><br><a href="infraestrutura.html"
+          class="btn btn-warning btn-lg" id="botaocpaas">
+          Saiba mais!
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <div class="footer-dark">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>SERVIÇOS</h3>
+            <ul>
+              <li><a href="telefonia.html">TELEFONIA</a></li>
+              <li><a href="infraestrutura.html">INFRAESTRUTURA</a></li>
+              <li><a href="internet.html">INTERNET</a></li>
+              <li><a href="2fa.html">2FA</a></li>
+              <li><a href="verified.html">GOOGLE VERIFIED CALLS</a></li>
+              <li><a href="sms.html">SMS PROGRAMÁVEL</a></li>
+              <li><a href="mascara.html">NÚMERO MÁSCARA</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>ÁREA DO CLIENTE</h3>
+            <ul>
+              <li><a href="login.html">LOGIN</a></li>
+              <li><a href="cadastrar.html">CADASTRE-SE</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>TELECALL</h3>
+            <p>Centro empresarial Mario Henrique Simonsen</p>
+            <p>Av. das Américas, 3434 | Bloco 1, Sala 505</p>
+            <p>Barra da Tijuca | Rio de Janeiro, RJ</p>
+            <br>
+            <p>Para qualquer informação, dúvida ou comentário:</p>
+            <p>(21) 3030-1010</p>
+            <p>0800 030 2016</p>
+          </div>
+        </div>
+
+
+        <a href="https://www.facebook.com/TelecallBr" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/telecallbr/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/company/telecall/" class="fa fa-linkedin"></a>
+
+
+        <div class="row justify-content-center">
+          <a class="image" href="#botaonavbar1">
+            <img src="img/logotipo.png" alt="Logo" width="250" height="60" class="d-inline-block align-text-top"
+              id="logofooter">
+          </a>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="copyright">Trabalho Acadêmico apoiado por Telecall&reg; e Realizado por Alexandre Cardoso, Ingrid
+              Ailana e Raphaella Brito.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="js/indexdarkmode.js"></script>
+  <script src="js/zoom.js"></script>
+</body>
+
+</html>
