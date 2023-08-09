@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/jquery.js"></script>
+    <link href="css/login.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <a class="image" href="index.html">
+                    <img src="img/logotipo.png" alt="Logo" class="logo" id="logo">
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-sm-6">
+                    <form id="loginform">
+                        <i id="mode_icon" class="fa-solid fa-moon"></i>
+                        <div id="zoom">
+                            <input type="image" src="img/zoommais.png" class="image" id="aumentar" onclick="increaseFontSize()">
+                            <input type="image" src="img/zoommenos.png" class="image" id="diminuir" onclick="decreaseFontSize()">
+                        </div>
+                        <br>
+
+                        <label>Login:</label>
+
+                        <input type="text" class="form-control" placeholder="Digite seu login" id="login2">
+                        <br>
+                        <label>Senha:</label>
+                        <input type="password" class="form-control" placeholder="Digite sua senha" id="senha2">
+                        <a href="esquecisenha.html"><button type="button" id="esqueci">Esqueci minha senha </button></a>
+                        <br>
+                        <br>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" id="botaoinvisivel"><a href="index.html"
+                                    id="botaoentrar">Entrar</a></button>
+                            <div id="toastContainer" aria-live="polite" aria-atomic="true"
+                                style="position: relative; min-height: 5px; margin-top: 3px;">
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="cadastrar.html" id="botaocadastrar" class="btn btn-link">Cadastrar</a>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/login.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+        <script src="js/darkmode.js"></script>
+        <script src="js/zoomlogin.js"></script>
+</body>
+
+</html>

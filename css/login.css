@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root {
+
+    --color-light-50: #f8fafc;
+    
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, rgb(112, 21, 21), #ce2131);
+}
+#loginform {
+    background: white;
+    border-radius: 7px;
+    padding: 10px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: poppins, sans-serif;
+}
+#logo {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#esqueci {
+    border: none;
+    text-decoration-line: underline;
+    background-color: transparent;
+    color: blue;
+}
+#botaoentrar {
+    margin-top: 15px;
+    background-color: #0e4e7c;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    text-decoration-line: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+#botaocadastrar {
+    margin-top: 15px;
+    background-color: #0e4e7c;
+    color: white;
+    font-weight: bolder;
+    border: white;
+    text-decoration-line: none;
+}
+#botaoinvisivel {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+#mode_icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 450px;
+
+}
+
+.dark#loginform {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#loginform .input-field input,
+.dark#loginform .input-field i {
+    color: var(--color-light-50);
+}
+
+@keyframes dark-to-light-background {
+    0% {
+        background-color:var(--color-dark-100);
+    }
+    100.0% {
+        background-color:var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark-background {
+    0% {
+        background-color:var(--color-light-50);
+    }
+    100.0% {
+        background-color:var(--color-dark-100); 
+    }
+}
+
+@media (min-width: 576px) {
+    #loginform {
+        margin-top: 120px;
+    }
+}
+@media (min-width: 992px) {
+    #loginform {
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(0, -50%);
+    }
+    #logo {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+#aumentar,
+#diminuir {
+    height: 25px;
+    width: 25px;
+}
+
+#zoom {
+    padding-top: 5px;
+}
+
+ /* Increase font size */
+ .increase-font-size label,
+ .increase-font-size input,
+ .increase-font-size button {
+     font-size: 1.2em;
+ }
+
+ /* Decrease font size */
+ .decrease-font-size label,
+ .decrease-font-size input,
+ .decrease-font-size button {
+     font-size: 0.8em;
+ }

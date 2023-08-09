@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root {
+    /* Light */
+    --color-light-50: #f8fafc;
+
+    /* Dark */
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(112, 21, 21), #ce2131);
+    text-align: center;
+    font-size: 16px;
+}
+
+#mode_icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 330px;
+}
+
+#formu {
+    background: white;
+    border-radius: 7px;
+    padding: 15px;
+    margin: 20px;
+    max-width: 800px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-family: poppins, sans-serif;
+}
+
+#botaocadastrar {
+    margin-top: 15px;
+    background-color: #0e4e7c;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    text-decoration-line: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+#botaolimpar {
+
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border: white;
+    text-decoration-line: none;
+    border-radius: 8px;
+}
+
+#botaoinvisivel {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+#obrigatorio {
+    padding-left: 50px;
+    position: flex;
+    top: 0;
+    font-size: 17px;
+    transform: translate(-22%, -50%);
+
+
+}
+
+@media (min-width: 576px) {
+    .container {
+        margin-top: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    #formu {
+        width: 50%;
+    }
+
+    .input-container {
+        display: flex;
+    }
+
+    .esquerda {
+        margin-right: 10px;
+    }
+
+    .direita {
+        margin-left: 10px;
+    }
+}
+
+
+/* Dark Mode */
+.dark#formu {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#formu .input-field input,
+.dark#formu .input-field i {
+    color: var(--color-light-50);
+}
+
+
+
+
+@keyframes dark-to-light-background {
+    0% {
+        background-color: var(--color-dark-100);
+    }
+
+    100.0% {
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark-background {
+    0% {
+        background-color: var(--color-light-50);
+    }
+
+    100.0% {
+        background-color: var(--color-dark-100);
+    }
+}
+
+#aumentar,
+#diminuir {
+    height: 25px;
+    width: 25px;
+}
+
+#zoom {
+    padding-top: 5px;
+}

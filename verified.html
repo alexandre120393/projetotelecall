@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/verified.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.js"></script>
+
+  <title>Telecall</title>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logotipo.png" alt="Logo" width="150" height="30" class="d-inline-block align-text-top">
+      </a>
+
+      <a href="telefonia.html" id="botaonavbar1">Telefonia</a>
+      <a href="infraestrutura.html" id="botaonavbar2">Infraestrutura</a>
+      <a href="internet.html" id="botaonavbar1">Internet</a>
+      <div class="dropdown">
+        <button class="dropbtn" id="internetdrop">CPaaS</button>
+        <div class="dropdown-content">
+          <a href="2fa.html">2FA</a>
+          <a href="verified.html">Google Verified Calls</a>
+          <a href="sms.html">SMS Programável</a>
+          <a href="mascara.html">Número Máscara</a>
+        </div>
+      </div>
+      <div id="userDetails"></div>
+      <a href="login.html" id="botaonavbar3">Login</a>
+      <a href="cadastrar.html" id="botaocadastrar">Cadastrar</a>
+      <div id="zoom">
+        <input type="image" src="img/zoommais.png" class="image" id="aumentar">
+        </div>
+        <div id="zoom">
+        <input type="image" src="img/zoommenos.png" class="image" id="diminuir">
+      </div>
+      <div class="image-container">
+        <input type="image" src="img/brasil.jpg" class="btTxt submit" onclick="window.location.href='verified.html';"
+          id="brasil">
+        <input type="image" src="img/eua.jpg" class="btTxt submit" onclick="window.location.href='verifiedeng.html';"
+          id="eua">
+        <i id="mode_icon" class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Chamadas verificadas</h1>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/veri2.png" id="mascara1">
+            <br>
+          </div>
+
+          <div class="col-md-6">
+            <div class="box" id="caixa1">
+              <p class="description" id="primeira">Esse novo recurso do Google, exclusivo para
+                telefones Android, permite que empresas exibam
+                para o cliente na hora da chamada sua marca,
+                logotipo e até mesmo o motivo da chamada.<br>
+                A Telecall é a primeira operadora de telecom no
+                Brasil a oferecer esse recurso do Google.
+
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="col-md-3 offset-sm-1">
+    <h2 id="funcionaheader">Como funciona?</h2>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col-md-6 offset-sm-1">
+      <div class="box" id="caixa2">
+        <p class="description" id="segunda">- Uma chamada telefônica
+          de uma empresa assinante
+          é feita para um cliente
+          potencial ou existente.</p>
+        <p class="description" id="segunda">- Em nanossegundos, a
+          solicitação é encaminhada
+          para a plataforma da Telecall
+          que processa a chamada e
+          adiciona as informações
+          verificadas antes de
+          encaminhá-la ao destinatário.</p>
+        <p class="description" id="segunda">- As informações aparecem
+          na tela do celular do
+          recipiente que atenderá a
+          ligação com uma chamada
+          de voz normal. </p>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img src="img/veri3.png" id="mascara2" class="img-fluid">
+    </div>
+  </div>
+
+
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col d-flex justify-content-center align-items-center">
+      <img src="img/veri4.png" id="mascara3" class="img-fluid">
+    </div>
+  </div>
+  <br>
+  <br>
+  </div>
+  <div class="col">
+    <div class="box" id="caixa3">
+      <p id="terceira"> 
+        - Estabeleça Confiança:<br>
+        Clientes são mais propensos a atender chamadas de organizações com os quais estão 
+        familiarizadas e com as quais já tem relação.<br>
+        - Agilize a Conexão:<br>
+        Quando o motivo da chamada é claro, a chance de o cliente atender é muito maior e a conexão 
+        com ele mais rápida e eficiente.<br>
+        - Melhore a Experiência do Cliente:<br>
+        O nome da marca, logotipo e a visualização do motivo da chamada oferecem uma experiencia 
+        melhor e muito mais amigável para o cliente.</p>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <div class="footer-dark">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>SERVIÇOS</h3>
+            <ul>
+              <li><a href="telefonia.html">TELEFONIA</a></li>
+            <li><a href="infraestrutura.html">INFRAESTRUTURA</a></li>
+            <li><a href="internet.html">INTERNET</a></li>
+            <li><a href="2fa.html">2FA</a></li>
+            <li><a href="verified.html">GOOGLE VERIFIED CALLS</a></li>
+            <li><a href="sms.html">SMS PROGRAMÁVEL</a></li>
+            <li><a href="mascara.html">NÚMERO MÁSCARA</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>ÁREA DO CLIENTE</h3>
+            <ul>
+              <li><a href="login.html">LOGIN</a></li>
+              <li><a href="cadastrar.html">CADASTRE-SE</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>TELECALL</h3>
+            <p>Centro empresarial Mario Henrique Simonsen</p>
+            <p>Av. das Américas, 3434 | Bloco 1, Sala 505</p>
+            <p>Barra da Tijuca | Rio de Janeiro, RJ</p>
+            <br>
+            <P>Para qualquer informação, dúvida ou comentário:</P>
+            <p> (21) 3030-1010</p>
+            <P>0800 030 2016</P>
+          </div>
+        </div>
+        <div class="row">
+          <a href="https://www.facebook.com/TelecallBr" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/telecallbr/" class="fa fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/telecall/" class="fa fa-linkedin"></a>
+          <a class="image" href="#botaonavbar1">
+            <img src="img/logotipo.png" alt="Logo" width="250" height="60" class="d-inline-block align-text-top"
+              id="logofooter">
+          </a>
+        </div>
+        <div>
+          <p class="copyright">Trabalho Acadêmico apoiado por Telecall&reg; e Realizado por Alexandre Cardoso, Ingrid
+            Ailana e Raphaella Brito.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="js/indexdarkmode.js"></script>
+  <script src="js/zoom.js"></script>
+</body>
+
+</html>

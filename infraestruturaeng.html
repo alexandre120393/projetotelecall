@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/infraestrutura.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.js"></script>
+
+  <title>Telecall</title>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="indexeng.html">
+        <img src="img/logotipo.png" alt="Logo" width="150" height="30" class="d-inline-block align-text-top">
+      </a>
+
+      <a href="telefoniaeng.html" id="botaonavbar1">Telephony</a>
+      <a href="infraestruturaeng.html" id="botaonavbar2">Infrastructure</a>
+      <a href="interneteng.html" id="botaonavbar1">Internet</a>
+      <div class="dropdown">
+        <button class="dropbtn" id="internetdrop">CPaaS</button>
+        <div class="dropdown-content">
+          <a href="2faeng.html">2FA</a>
+          <a href="verifiedeng.html">Google Verified Calls</a>
+          <a href="smseng.html">Programmable SMS</a>
+          <a href="mascaraeng.html">Masked Number</a>
+        </div>
+      </div>
+      <div id="userDetails"></div>
+      <a href="logineng.html" id="botaonavbar3">Login</a>
+      <a href="cadastrareng.html" id="botaocadastrar">Register</a>
+      <div id="zoom">
+        <input type="image" src="img/zoommais.png" class="image" id="aumentar">
+        </div>
+        <div id="zoom">
+        <input type="image" src="img/zoommenos.png" class="image" id="diminuir">
+      </div>
+      <div class="image-container">
+        <input type="image" src="img/brasil.jpg" class="btTxt submit" onclick="window.location.href='infraestrutura.html';"
+          id="brasil">
+        <input type="image" src="img/eua.jpg" class="btTxt submit" onclick="window.location.href='infraestruturaeng.html';" id="eua">
+        <i id="mode_icon" class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Network and Infrastructure</h1>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/infra3.png" id="mascara1">
+            <br>
+          </div>
+
+          <div class="col-md-6">
+            <div class="box" id="caixa1">
+              <p class="description" id="primeira">- Point-to-Point:<br>
+                High quality and secure network formation solution with MPLS technology (Multi Protocol Label
+                Switching) that allows the prioritization of traffic within the contracted network.
+                Ideal for companies that need quality in the integration of branches or connections to points
+                remote.<br><br>
+                - MPLS:<br>
+                Secure and high quality network formation solution with MPLS technology (Multi Protocol Label
+                Switching) that allows the prioritization of traffic within the contracted network. the data packets
+                Traffic on the network is marked with QoS (Quality of services) priority labels.<br><br>
+                - Unlit Fiber and Ducts: <br>
+                Private leasing of dark fiber and ducts between two points for companies that have a high demand for
+                data traffic and a structure of high capacity and speed.<br><br>
+                - Co-locations: <br> Availability of own cloud and space in racks inside the Data Center Telecall. Structure
+                state-of-the-art technology with resiliency, security, connectivity and 24/7 support, 365 days a year. Our Date
+                Center is located in Barra da Tijuca in Rio de Janeiro and has a fiber optic ring and interconnection with
+                several carriers and data centers in the city.
+              </p>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="col-md-3 offset-sm-1">
+    <h2 id="funcionaheader">Benefits:</h2>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col-md-6 offset-sm-1">
+      <div class="box" id="caixa2">
+        <p class="description" id="segunda">- Peer-to-peer: Guaranteed equal download and upload speeds.</p>
+        <p class="description" id="segunda">- MPLS: Priority-tagged data
+          established.</p>
+        <p class="description" id="segunda">- Unlit Fiber and Ducts: Wide network of ducts for the passage of Fiber with
+          easy access switch boxes.<br>
+          - Co-location: High availability of uninterrupted power supply with generators, UPS and battery bank.
+          </p>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img src="img/infra2.png" id="mascara2" class="img-fluid">
+    </div>
+  </div>
+
+
+  </div>
+  
+
+
+  <br>
+  <br>
+  <div class="footer-dark">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>SERVICES</h3>
+                        <ul>
+                            <li><a href="telefoniaeng.html">TELEPHONY</a></li>
+            <li><a href="infraestruturaeng.html">INFRASTRUCTURE</a></li>
+            <li><a href="interneteng.html">INTERNET</a></li>
+            <li><a href="2faeng.html">2FA</a></li>
+            <li><a href="verifiedeng.html">GOOGLE VERIFIED CALLS</a></li>
+            <li><a href="smseng.html">PROGRAMMABLE SMS</a></li>
+            <li><a href="mascaraeng.html">MASKED NUMBER</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>CUSTOMER'S AREA</h3>
+                        <ul>
+                            <li><a href="logineng.html">LOGIN</a></li>
+                            <li><a href="cadastrareng.html">REGISTER</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>TELECALL</h3>
+                        <p>Mario Henrique Simonsen Business Center</p>
+                        <p>Av. das Américas, 3434 | Block 1, Room 505</p>
+                        <p>Barra da Tijuca | Rio de Janeiro, RJ</p>
+                        <br>
+                        <P>For any information, questions or comments:</P>
+                        <p> (21) 3030-1010</p>
+                        <P>0800 030 2016</P>
+          </div>
+        </div>
+        <div class="row">
+          <a href="https://www.facebook.com/TelecallBr" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/telecallbr/" class="fa fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/telecall/" class="fa fa-linkedin"></a>
+          <a class="image" href="#botaonavbar1">
+            <img src="img/logotipo.png" alt="Logo" width="250" height="60" class="d-inline-block align-text-top"
+              id="logofooter">
+          </a>
+        </div>
+        <div>
+          <p class="col-md-12 text-center">&copy; Grupo 02 2023</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/indexeng.js"></script>
+  <script src="js/indexdarkmode.js"></script>
+  <script src="js/zoom.js"></script>
+</body>
+
+</html>
